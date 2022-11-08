@@ -26,7 +26,7 @@ lsusb | grep 20d6:
 ```
 Remember the number that comes after 20d6:.
 
-Open hid_list.c in src/ and find PROCON and replace `0x0002` with that number, then build and install.
+Open hid_list.c in src/ and find the line `#define USB_DEVICE_ID_NINTENDO_PROCON   0x0002` and replace `0x0002` with that number, then build and install.
 
 ## Related projects
 
