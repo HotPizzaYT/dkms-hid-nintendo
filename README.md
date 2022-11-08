@@ -17,7 +17,16 @@ sudo dkms add .
 sudo dkms build nintendo -v 3.2
 sudo dkms install nintendo -v 3.2
 ```
+## It doesn't work!
 
+Open the terminal and type this command.
+
+```
+lsusb | grep 20d6:
+```
+Remember the number that comes after 20d6:.
+
+Open hid_list.c in src/ and find PROCON and replace `0x0002` with that number, then build and install.
 
 ## Related projects
 
